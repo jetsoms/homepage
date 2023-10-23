@@ -2,17 +2,20 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/services
 
-- My First Group:
-    - My First Service:
-        href: http://localhost/
-        description: Homepage is awesome
+- Business Applications:
+    - Website:
+        href: http://jetsoms.co.uk/
+        description: Website
+    - The Hub:
+        href: https://hub.jetsoms.co.uk
+        description: Hub
 
-- My Second Group:
-    - My Second Service:
+- Business Resources:
+    - Microsoft:
         href: http://localhost/
-        description: Homepage is the best
+        description: Email Provider
 
-- My Third Group:
+- Third Party Links:
     - My Third Service:
         href: http://localhost/
         description: Homepage is 😎
