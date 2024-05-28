@@ -11,7 +11,14 @@
         "percent": "{{value, percent}}",
         "number": "{{value, number}}",
         "ms": "{{value, number}}",
-        "date": "{{value, date}}"
+        "date": "{{value, date}}",
+        "relativeDate": "{{value, relativeDate}}",
+        "uptime": "{{value, uptime}}",
+        "months": "mo",
+        "days": "g",
+        "hours": "o",
+        "minutes": "m",
+        "seconds": "s"
     },
     "widget": {
         "missing_type": "Tipo del Widget Mancante: {{type}}",
@@ -40,15 +47,11 @@
         "load": "Carico",
         "temp": "TEMP",
         "max": "Max",
-        "uptime": "UP",
-        "months": "me",
-        "days": "g",
-        "hours": "o",
-        "minutes": "m"
+        "uptime": "UP"
     },
     "unifi": {
         "users": "Utenti",
-        "uptime": "Uptime di Sistema",
+        "uptime": "Tempo di attività",
         "days": "Giorni",
         "wan": "WAN",
         "lan": "LAN",
@@ -104,6 +107,13 @@
         "episodes": "Episodi",
         "songs": "Canzoni"
     },
+    "esphome": {
+        "offline": "Non in linea",
+        "offline_alt": "Non in linea",
+        "online": "Online",
+        "total": "Totale",
+        "unknown": "Sconosciuto"
+    },
     "evcc": {
         "pv_power": "Produzione",
         "battery_soc": "Batteria",
@@ -121,6 +131,24 @@
     "freshrss": {
         "subscriptions": "Iscrizioni",
         "unread": "Non letto"
+    },
+    "fritzbox": {
+        "connectionStatus": "Stato",
+        "connectionStatusUnconfigured": "Non configurato",
+        "connectionStatusConnecting": "Connessione in corso",
+        "connectionStatusAuthenticating": "In fase di autenticazione",
+        "connectionStatusPendingDisconnect": "In attesa di disconnessione",
+        "connectionStatusDisconnecting": "Disconnessione in corso",
+        "connectionStatusDisconnected": "Disconnesso",
+        "connectionStatusConnected": "Connesso",
+        "uptime": "Tempo di attività",
+        "maxDown": "Max. Down",
+        "maxUp": "Max. Up",
+        "down": "Down",
+        "up": "Up",
+        "received": "Ricevuti",
+        "sent": "Inviati",
+        "externalIPAddress": "IP Esterno"
     },
     "caddy": {
         "upstreams": "Upstream",
@@ -249,7 +277,7 @@
         "approved": "Approvati",
         "available": "Disponibili"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Totale",
         "connected": "Connesso",
         "new_devices": "Nuovi Dispositivi",
@@ -398,7 +426,8 @@
         "search": "Cerca",
         "custom": "Personalizzato",
         "visit": "Visita",
-        "url": "URL"
+        "url": "URL",
+        "searchsuggestion": "Suggerimenti"
     },
     "wmo": {
         "0-day": "Soleggiato",
@@ -471,9 +500,9 @@
     },
     "healthchecks": {
         "new": "Nuovo",
-        "up": "Online",
+        "up": "Up",
         "grace": "Periodo di Tolleranza",
-        "down": "Non in linea",
+        "down": "Down",
         "paused": "In Pausa",
         "status": "Stato",
         "last_ping": "Ultimo Ping",
@@ -499,8 +528,7 @@
     "truenas": {
         "load": "Carico di Sistema",
         "uptime": "Tempo di attività",
-        "alerts": "Allarmi",
-        "time": "{{value, number(style: unit; unitDisplay: long;)}}"
+        "alerts": "Allarmi"
     },
     "pyload": {
         "speed": "Velocità",
@@ -515,7 +543,15 @@
     },
     "hdhomerun": {
         "channels": "Canali",
-        "hd": "HD"
+        "hd": "HD",
+        "tunerCount": "Tuners",
+        "channelNumber": "Channel",
+        "channelNetwork": "Rete",
+        "signalStrength": "Intensità",
+        "signalQuality": "Quality",
+        "symbolQuality": "Quality",
+        "networkRate": "Bitrate",
+        "clientIP": "Client"
     },
     "scrutiny": {
         "passed": "Passati",
@@ -525,6 +561,14 @@
     "paperlessngx": {
         "inbox": "In arrivo",
         "total": "Totale"
+    },
+    "peanut": {
+        "battery_charge": "Battery Charge",
+        "ups_load": "UPS Load",
+        "ups_status": "UPS Status",
+        "online": "Online",
+        "on_battery": "On Battery",
+        "low_battery": "Low Battery"
     },
     "nextdns": {
         "wait": "Attendere prego",
@@ -666,6 +710,11 @@
         "targets_down": "Target Non Attivi",
         "targets_total": "Targets Totali"
     },
+    "gatus": {
+        "up": "Siti On",
+        "down": "Siti Down",
+        "uptime": "Tempo di attività"
+    },
     "ghostfolio": {
         "gross_percent_today": "Oggi",
         "gross_percent_1y": "Un anno",
@@ -747,6 +796,14 @@
         "passed": "Passati",
         "failed": "Fallito"
     },
+    "openwrt": {
+        "uptime": "Tempo di attività",
+        "cpuLoad": "CPU Load Avg (5m)",
+        "up": "Up",
+        "down": "Down",
+        "bytesTx": "Transmitted",
+        "bytesRx": "Ricevuti"
+    },
     "uptimerobot": {
         "status": "Stato",
         "uptime": "Tempo di attività",
@@ -765,6 +822,59 @@
         "inCinemas": "Al cinema",
         "physicalRelease": "Release fisici",
         "digitalRelease": "Versione digitale",
-        "noEventsToday": "Nessun evento per oggi!"
+        "noEventsToday": "Nessun evento per oggi!",
+        "noEventsFound": "Nessun evento trovato"
+    },
+    "romm": {
+        "platforms": "Platforms",
+        "totalRoms": "Total ROMs"
+    },
+    "netdata": {
+        "warnings": "Avvisi",
+        "criticals": "Criticals"
+    },
+    "plantit": {
+        "events": "Events",
+        "plants": "Plants",
+        "photos": "Foto",
+        "species": "Specie"
+    },
+    "gitea": {
+        "notifications": "Notifiche",
+        "issues": "Problemi",
+        "pulls": "Richieste di Pull"
+    },
+    "stash": {
+        "scenes": "Scene",
+        "scenesPlayed": "Scene Riprodotte",
+        "playCount": "Totale Riproduzioni",
+        "playDuration": "Tempo Guardato",
+        "sceneSize": "Dimensione Delle Scene",
+        "sceneDuration": "Durata Delle Scene",
+        "images": "Immagini",
+        "imageSize": "Images Size",
+        "galleries": "Galleries",
+        "performers": "Esecutori",
+        "studios": "Studi",
+        "movies": "Film",
+        "tags": "Tag",
+        "oCount": "O Count"
+    },
+    "tandoor": {
+        "users": "Utenti",
+        "recipes": "Ricette",
+        "keywords": "Keywords"
+    },
+    "homebox": {
+        "items": "Items",
+        "totalWithWarranty": "With Warranty",
+        "locations": "Locations",
+        "labels": "Labels",
+        "users": "Utenti",
+        "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Allarmi",
+        "bans": "Bans"
     }
 }

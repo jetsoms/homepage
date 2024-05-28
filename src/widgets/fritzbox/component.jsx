@@ -4,17 +4,7 @@ import Container from "components/services/widget/container";
 import Block from "components/services/widget/block";
 import useWidgetAPI from "utils/proxy/use-widget-api";
 
-const formatUptime = (timestamp) => {
-  const hours = Math.floor(timestamp / 3600);
-  const minutes = Math.floor((timestamp % 3600) / 60);
-  const seconds = timestamp % 60;
-
-  const hourDuration = hours > 0 ? `${hours}h` : "00h";
-  const minDuration = minutes > 0 ? `${minutes}m` : "00m";
-  const secDuration = seconds > 0 ? `${seconds}s` : "00s";
-
-  return hourDuration + minDuration + secDuration;
-};
+export const fritzboxDefaultFields = ["connectionStatus", "uptime", "maxDown", "maxUp"];
 
 export default function Component({ service }) {
   const { t } = useTranslation();
@@ -27,7 +17,7 @@ export default function Component({ service }) {
 
   // Default fields
   if (!widget.fields?.length > 0) {
-    widget.fields = ["connectionStatus", "uptime", "maxDown", "maxUp"];
+    widget.fields = fritzboxDefaultFields;
   }
   const MAX_ALLOWED_FIELDS = 4;
   // Limits max number of displayed fields
@@ -54,7 +44,7 @@ export default function Component({ service }) {
   return (
     <Container service={service}>
       <Block label="fritzbox.connectionStatus" value={t(`fritzbox.connectionStatus${fritzboxData.connectionStatus}`)} />
-      <Block label="fritzbox.uptime" value={formatUptime(fritzboxData.uptime)} />
+      <Block label="fritzbox.uptime" value={t("common.uptime", { value: fritzboxData.uptime })} />
       <Block label="fritzbox.maxDown" value={t("common.byterate", { value: fritzboxData.maxDown / 8, decimals: 1 })} />
       <Block label="fritzbox.maxUp" value={t("common.byterate", { value: fritzboxData.maxUp / 8, decimals: 1 })} />
       <Block label="fritzbox.down" value={t("common.byterate", { value: fritzboxData.down, decimals: 1 })} />

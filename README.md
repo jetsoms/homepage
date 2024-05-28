@@ -25,6 +25,13 @@
   <a href="https://paypal.me/phelpsben" title="Donate"><img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/benphelps"></a>
 </p>
 
+<p align="center">
+  <a href="https://www.digitalocean.com/?refcode=df14bcb7c016&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" /></a>
+</p>
+<p align="center">
+<em>Homepage builds are kindly powered by DigitalOcean.</em>
+</p>
+
 # Features
 
 With features like quick search, bookmarks, weather support, a wide range of integrations and widgets, an elegant and modern design, and a focus on performance, Homepage is your ideal start to the day and a handy companion throughout it.
@@ -41,7 +48,7 @@ With features like quick search, bookmarks, weather support, a wide range of int
 
 ## Docker Integration
 
-Homepage has built-in support for Docker, and can automatically discover and add services to the homepage based on labels. See the [Docker](https://gethomepage.dev/latest/installation/docker/) page for more information.
+Homepage has built-in support for Docker, and can automatically discover and add services to the homepage based on labels. See the [Docker Service Discovery](https://gethomepage.dev/latest/configs/docker/#automatic-service-discovery) page for more information.
 
 ## Service Widgets
 
@@ -163,8 +170,6 @@ mkdocs serve # or build, to build the static site
 # Support & Suggestions
 
 If you have any questions, suggestions, or general issues, please start a discussion on the [Discussions](https://github.com/gethomepage/homepage/discussions) page.
-
-For bug reports, please open an issue on the [Issues](https://github.com/gethomepage/homepage/issues) page.
 
 ## Contributing & Contributors
 

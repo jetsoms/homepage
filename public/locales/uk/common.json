@@ -11,14 +11,21 @@
         "percent": "{{value, percent}}",
         "number": "{{value, number}}",
         "ms": "{{value, number}}",
-        "date": "{{value, date}}"
+        "date": "{{value, date}}",
+        "relativeDate": "{{value, relativeDate}}",
+        "uptime": "{{value, uptime}}",
+        "months": "mo",
+        "days": "d",
+        "hours": "h",
+        "minutes": "m",
+        "seconds": "s"
     },
     "widget": {
         "missing_type": "Відсутній тип віджета: {{type}}",
         "api_error": "Помилка API",
         "information": "Інформація",
         "status": "Стан",
-        "url": "URL",
+        "url": "URL-адреса",
         "raw_error": "Помилка Raw",
         "response_data": "Дані відповіді"
     },
@@ -32,23 +39,19 @@
         "placeholder": "Пошук…"
     },
     "resources": {
-        "cpu": "CPU",
-        "mem": "Пам'ять",
-        "total": "Всього",
+        "cpu": "ЦП",
+        "mem": "ОЗП",
+        "total": "Усього",
         "free": "Вільно",
         "used": "Використано",
         "load": "Завантаження",
-        "temp": "TEMP",
-        "max": "Max",
-        "uptime": "Відправка",
-        "months": "міс",
-        "days": "д",
-        "hours": "г",
-        "minutes": "хв"
+        "temp": "Температура",
+        "max": "Макс.",
+        "uptime": "Відправка"
     },
     "unifi": {
         "users": "Користувачі",
-        "uptime": "Час роботи системи",
+        "uptime": "Час роботи",
         "days": "Днів",
         "wan": "WAN",
         "lan": "LAN",
@@ -66,8 +69,8 @@
     "docker": {
         "rx": "RX",
         "tx": "TX",
-        "mem": "Пам'ять",
-        "cpu": "CPU",
+        "mem": "ОЗП",
+        "cpu": "ЦП",
         "running": "Запущено",
         "offline": "Офлайн",
         "error": "Помилка",
@@ -104,6 +107,13 @@
         "episodes": "Епізоди",
         "songs": "Пісні"
     },
+    "esphome": {
+        "offline": "Офлайн",
+        "offline_alt": "Офлайн",
+        "online": "Онлайн",
+        "total": "Усього",
+        "unknown": "Невідомий"
+    },
     "evcc": {
         "pv_power": "Виробництво",
         "battery_soc": "Батарея",
@@ -121,6 +131,24 @@
     "freshrss": {
         "subscriptions": "Передплата",
         "unread": "Не прочитано"
+    },
+    "fritzbox": {
+        "connectionStatus": "Стан",
+        "connectionStatusUnconfigured": "Unconfigured",
+        "connectionStatusConnecting": "Connecting",
+        "connectionStatusAuthenticating": "Authenticating",
+        "connectionStatusPendingDisconnect": "Pending Disconnect",
+        "connectionStatusDisconnecting": "Disconnecting",
+        "connectionStatusDisconnected": "Disconnected",
+        "connectionStatusConnected": "Connected",
+        "uptime": "Час роботи",
+        "maxDown": "Max. Down",
+        "maxUp": "Max. Up",
+        "down": "Down",
+        "up": "Up",
+        "received": "Received",
+        "sent": "Sent",
+        "externalIPAddress": "Ext. IP"
     },
     "caddy": {
         "upstreams": "Потоки",
@@ -249,11 +277,11 @@
         "approved": "Затверджено",
         "available": "Доступно"
     },
-    "pialert": {
-        "total": "Всього",
-        "connected": "Підключено",
-        "new_devices": "Нові пристрої",
-        "down_alerts": "Сповіщення про збій"
+    "netalertx": {
+        "total": "Усього",
+        "connected": "Connected",
+        "new_devices": "New Devices",
+        "down_alerts": "Down Alerts"
     },
     "pihole": {
         "queries": "Запити",
@@ -275,7 +303,7 @@
     "portainer": {
         "running": "Запущено",
         "stopped": "Зупинено",
-        "total": "Всього"
+        "total": "Усього"
     },
     "tailscale": {
         "address": "Адреса",
@@ -309,7 +337,7 @@
     "npm": {
         "enabled": "Увімкнено",
         "disabled": "Вимкнено",
-        "total": "Всього"
+        "total": "Усього"
     },
     "coinmarketcap": {
         "configure": "Налаштуйте одну або кілька криптовалют для відстеження",
@@ -367,24 +395,24 @@
         "failedLoginsLast24H": "Невдалі входи (24 години)"
     },
     "proxmox": {
-        "mem": "Пам'ять",
-        "cpu": "CPU",
+        "mem": "ОЗП",
+        "cpu": "ЦП",
         "lxc": "Контейнери Linux",
         "vms": "Віртуальні машини"
     },
     "glances": {
-        "cpu": "CPU",
+        "cpu": "ЦП",
         "load": "Завантаження",
         "wait": "Будь ласка, зачекайте",
-        "temp": "TEMP",
+        "temp": "Температура",
         "_temp": "Temp",
         "warn": "Увага",
         "uptime": "Відправка",
-        "total": "Всього",
+        "total": "Усього",
         "free": "Вільно",
         "used": "Використано",
-        "days": "д",
-        "hours": "г",
+        "days": "d",
+        "hours": "h",
         "crit": "Crit",
         "read": "Прочитано",
         "write": "Написати",
@@ -398,7 +426,8 @@
         "search": "Пошук",
         "custom": "Користувацький",
         "visit": "Відвідайте",
-        "url": "URL"
+        "url": "URL-адреса",
+        "searchsuggestion": "Suggestion"
     },
     "wmo": {
         "0-day": "Сонячно",
@@ -471,9 +500,9 @@
     },
     "healthchecks": {
         "new": "Новий",
-        "up": "Онлайн",
+        "up": "Up",
         "grace": "У пільговий період",
-        "down": "Офлайн",
+        "down": "Down",
         "paused": "Призупинено",
         "status": "Стан",
         "last_ping": "Останній пінг",
@@ -499,14 +528,13 @@
     "truenas": {
         "load": "Завантаження системи",
         "uptime": "Час роботи",
-        "alerts": "Оповіщення",
-        "time": "{{value, number(style: unit; unitDisplay: long;)}}"
+        "alerts": "Оповіщення"
     },
     "pyload": {
         "speed": "Швидкість",
         "active": "Активний",
         "queue": "Черга",
-        "total": "Всього"
+        "total": "Усього"
     },
     "gluetun": {
         "public_ip": "Публічний IP",
@@ -515,7 +543,15 @@
     },
     "hdhomerun": {
         "channels": "Канали",
-        "hd": "HD"
+        "hd": "HD",
+        "tunerCount": "Tuners",
+        "channelNumber": "Channel",
+        "channelNetwork": "Network",
+        "signalStrength": "Strength",
+        "signalQuality": "Quality",
+        "symbolQuality": "Quality",
+        "networkRate": "Бітрейт",
+        "clientIP": "Client"
     },
     "scrutiny": {
         "passed": "Пройшов",
@@ -524,7 +560,15 @@
     },
     "paperlessngx": {
         "inbox": "Вхідні",
-        "total": "Всього"
+        "total": "Усього"
+    },
+    "peanut": {
+        "battery_charge": "Battery Charge",
+        "ups_load": "UPS Load",
+        "ups_status": "UPS Status",
+        "online": "Онлайн",
+        "on_battery": "On Battery",
+        "low_battery": "Low Battery"
     },
     "nextdns": {
         "wait": "Будь ласка, зачекайте",
@@ -582,7 +626,7 @@
     "proxmoxbackupserver": {
         "datastore_usage": "Сховище даних",
         "failed_tasks_24h": "Невиконані завдання 24 години",
-        "cpu_usage": "CPU",
+        "cpu_usage": "ЦП",
         "memory_usage": "Пам'ять"
     },
     "immich": {
@@ -596,7 +640,7 @@
         "down": "Неактивні сайти",
         "uptime": "Час роботи",
         "incident": "Інцидент",
-        "m": "хв"
+        "m": "m"
     },
     "atsumeru": {
         "series": "Серії",
@@ -665,6 +709,11 @@
         "targets_up": "Цілі вгору",
         "targets_down": "Цілі вниз",
         "targets_total": "Всього цілей"
+    },
+    "gatus": {
+        "up": "Активні сайти",
+        "down": "Неактивні сайти",
+        "uptime": "Час роботи"
     },
     "ghostfolio": {
         "gross_percent_today": "Today",
@@ -741,11 +790,19 @@
     },
     "openmediavault": {
         "downloading": "Downloading",
-        "total": "Всього",
+        "total": "Усього",
         "running": "Запущено",
         "stopped": "Зупинено",
         "passed": "Пройшов",
         "failed": "Невдача"
+    },
+    "openwrt": {
+        "uptime": "Час роботи",
+        "cpuLoad": "CPU Load Avg (5m)",
+        "up": "Up",
+        "down": "Down",
+        "bytesTx": "Transmitted",
+        "bytesRx": "Received"
     },
     "uptimerobot": {
         "status": "Стан",
@@ -765,6 +822,59 @@
         "inCinemas": "In cinemas",
         "physicalRelease": "Physical release",
         "digitalRelease": "Digital release",
-        "noEventsToday": "No events for today!"
+        "noEventsToday": "No events for today!",
+        "noEventsFound": "No events found"
+    },
+    "romm": {
+        "platforms": "Platforms",
+        "totalRoms": "Total ROMs"
+    },
+    "netdata": {
+        "warnings": "Warnings",
+        "criticals": "Criticals"
+    },
+    "plantit": {
+        "events": "Events",
+        "plants": "Plants",
+        "photos": "Фотографії",
+        "species": "Species"
+    },
+    "gitea": {
+        "notifications": "Notifications",
+        "issues": "Питання",
+        "pulls": "Pull Requests"
+    },
+    "stash": {
+        "scenes": "Scenes",
+        "scenesPlayed": "Scenes Played",
+        "playCount": "Total Plays",
+        "playDuration": "Time Watched",
+        "sceneSize": "Scenes Size",
+        "sceneDuration": "Scenes Duration",
+        "images": "Images",
+        "imageSize": "Images Size",
+        "galleries": "Galleries",
+        "performers": "Performers",
+        "studios": "Studios",
+        "movies": "Фільми",
+        "tags": "Tags",
+        "oCount": "O Count"
+    },
+    "tandoor": {
+        "users": "Користувачі",
+        "recipes": "Recipes",
+        "keywords": "Keywords"
+    },
+    "homebox": {
+        "items": "Items",
+        "totalWithWarranty": "With Warranty",
+        "locations": "Locations",
+        "labels": "Labels",
+        "users": "Користувачі",
+        "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Оповіщення",
+        "bans": "Bans"
     }
 }

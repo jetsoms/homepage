@@ -11,7 +11,14 @@
         "percent": "{{value, percent}}",
         "number": "{{value, number}}",
         "ms": "{{value, number}}",
-        "date": "{{value, date}}"
+        "date": "{{value, date}}",
+        "relativeDate": "{{value, relativeDate}}",
+        "uptime": "{{value, uptime}}",
+        "months": "mo",
+        "days": "d",
+        "hours": "h",
+        "minutes": "m",
+        "seconds": "s"
     },
     "widget": {
         "missing_type": "Lipsește Tipul de Widget: {{type}}",
@@ -40,15 +47,11 @@
         "load": "Sarcină",
         "temp": "TEMP",
         "max": "Maxim",
-        "uptime": "UP",
-        "months": "lună",
-        "days": "zi",
-        "hours": "ora",
-        "minutes": "min"
+        "uptime": "UP"
     },
     "unifi": {
         "users": "Utilizatori",
-        "uptime": "Timp de funcționare a sistemului",
+        "uptime": "Uptime",
         "days": "Zile",
         "wan": "WAN",
         "lan": "LAN",
@@ -104,6 +107,13 @@
         "episodes": "Episoade",
         "songs": "Melodii"
     },
+    "esphome": {
+        "offline": "Offline",
+        "offline_alt": "Offline",
+        "online": "Online",
+        "total": "Total",
+        "unknown": "Necunoscut"
+    },
     "evcc": {
         "pv_power": "Producție",
         "battery_soc": "Baterie",
@@ -121,6 +131,24 @@
     "freshrss": {
         "subscriptions": "Abonări",
         "unread": "Necitit"
+    },
+    "fritzbox": {
+        "connectionStatus": "Stare",
+        "connectionStatusUnconfigured": "Unconfigured",
+        "connectionStatusConnecting": "Connecting",
+        "connectionStatusAuthenticating": "Authenticating",
+        "connectionStatusPendingDisconnect": "Pending Disconnect",
+        "connectionStatusDisconnecting": "Disconnecting",
+        "connectionStatusDisconnected": "Disconnected",
+        "connectionStatusConnected": "Connected",
+        "uptime": "Uptime",
+        "maxDown": "Max. Down",
+        "maxUp": "Max. Up",
+        "down": "Jos",
+        "up": "Sus",
+        "received": "Received",
+        "sent": "Sent",
+        "externalIPAddress": "Ext. IP"
     },
     "caddy": {
         "upstreams": "Upstreamuri",
@@ -249,7 +277,7 @@
         "approved": "Aprobate",
         "available": "Disponibile"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Total",
         "connected": "Connected",
         "new_devices": "New Devices",
@@ -383,8 +411,8 @@
         "total": "Total",
         "free": "Disponibili",
         "used": "Utilizați",
-        "days": "zi",
-        "hours": "ora",
+        "days": "d",
+        "hours": "h",
         "crit": "Crit",
         "read": "Read",
         "write": "Write",
@@ -398,7 +426,8 @@
         "search": "Caută",
         "custom": "Personalizat",
         "visit": "Vizită",
-        "url": "URL"
+        "url": "URL",
+        "searchsuggestion": "Suggestion"
     },
     "wmo": {
         "0-day": "Însorit",
@@ -471,9 +500,9 @@
     },
     "healthchecks": {
         "new": "New",
-        "up": "Online",
+        "up": "Sus",
         "grace": "In Grace Period",
-        "down": "Offline",
+        "down": "Jos",
         "paused": "Paused",
         "status": "Stare",
         "last_ping": "Last Ping",
@@ -499,8 +528,7 @@
     "truenas": {
         "load": "System Load",
         "uptime": "Uptime",
-        "alerts": "Alerts",
-        "time": "{{value, number(style: unit; unitDisplay: long;)}}"
+        "alerts": "Alerts"
     },
     "pyload": {
         "speed": "Speed",
@@ -515,7 +543,15 @@
     },
     "hdhomerun": {
         "channels": "Channels",
-        "hd": "HD"
+        "hd": "HD",
+        "tunerCount": "Tuners",
+        "channelNumber": "Channel",
+        "channelNetwork": "Network",
+        "signalStrength": "Strength",
+        "signalQuality": "Quality",
+        "symbolQuality": "Quality",
+        "networkRate": "Rata de biți",
+        "clientIP": "Client"
     },
     "scrutiny": {
         "passed": "Passed",
@@ -525,6 +561,14 @@
     "paperlessngx": {
         "inbox": "Inbox",
         "total": "Total"
+    },
+    "peanut": {
+        "battery_charge": "Battery Charge",
+        "ups_load": "UPS Load",
+        "ups_status": "UPS Status",
+        "online": "Online",
+        "on_battery": "On Battery",
+        "low_battery": "Low Battery"
     },
     "nextdns": {
         "wait": "Please Wait",
@@ -596,7 +640,7 @@
         "down": "Sites Down",
         "uptime": "Uptime",
         "incident": "Incident",
-        "m": "min"
+        "m": "m"
     },
     "atsumeru": {
         "series": "Serie",
@@ -665,6 +709,11 @@
         "targets_up": "Targets Up",
         "targets_down": "Targets Down",
         "targets_total": "Total Targets"
+    },
+    "gatus": {
+        "up": "Sites Up",
+        "down": "Sites Down",
+        "uptime": "Uptime"
     },
     "ghostfolio": {
         "gross_percent_today": "Today",
@@ -747,6 +796,14 @@
         "passed": "Passed",
         "failed": "Failed"
     },
+    "openwrt": {
+        "uptime": "Uptime",
+        "cpuLoad": "CPU Load Avg (5m)",
+        "up": "Sus",
+        "down": "Jos",
+        "bytesTx": "Transmitted",
+        "bytesRx": "Received"
+    },
     "uptimerobot": {
         "status": "Stare",
         "uptime": "Uptime",
@@ -765,6 +822,59 @@
         "inCinemas": "In cinemas",
         "physicalRelease": "Physical release",
         "digitalRelease": "Digital release",
-        "noEventsToday": "No events for today!"
+        "noEventsToday": "No events for today!",
+        "noEventsFound": "No events found"
+    },
+    "romm": {
+        "platforms": "Platforms",
+        "totalRoms": "Total ROMs"
+    },
+    "netdata": {
+        "warnings": "Warnings",
+        "criticals": "Criticals"
+    },
+    "plantit": {
+        "events": "Events",
+        "plants": "Plants",
+        "photos": "Photos",
+        "species": "Species"
+    },
+    "gitea": {
+        "notifications": "Notifications",
+        "issues": "Issues",
+        "pulls": "Pull Requests"
+    },
+    "stash": {
+        "scenes": "Scenes",
+        "scenesPlayed": "Scenes Played",
+        "playCount": "Total Plays",
+        "playDuration": "Time Watched",
+        "sceneSize": "Scenes Size",
+        "sceneDuration": "Scenes Duration",
+        "images": "Images",
+        "imageSize": "Images Size",
+        "galleries": "Galleries",
+        "performers": "Performers",
+        "studios": "Studios",
+        "movies": "Filme",
+        "tags": "Tags",
+        "oCount": "O Count"
+    },
+    "tandoor": {
+        "users": "Utilizatori",
+        "recipes": "Recipes",
+        "keywords": "Keywords"
+    },
+    "homebox": {
+        "items": "Items",
+        "totalWithWarranty": "With Warranty",
+        "locations": "Locations",
+        "labels": "Labels",
+        "users": "Utilizatori",
+        "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Alerts",
+        "bans": "Bans"
     }
 }
